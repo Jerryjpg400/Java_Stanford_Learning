@@ -1,4 +1,4 @@
-/* File: Grayscale.java
+ /* File: Grayscale.java
  * -------------------
  * This program shows how we can use 2D arrays and GImages
  * to modify an image's pixels to make it grayscale.
