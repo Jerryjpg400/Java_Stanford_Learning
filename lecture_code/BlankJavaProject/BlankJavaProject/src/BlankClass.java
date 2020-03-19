@@ -10,11 +10,12 @@ import java.util.*;
 public class BlankClass extends ConsoleProgram{
 	
 	public void run() {
-		DateClass da = new DateClass(12, 31);
-		println("Date is :" + da);
-		for (int i = 0; i < 120; i++) {
-			da.nextDay();
-			println("Date is :" + da);
-		}
+		BankAccount save = new BankAccount("Jimmy");
+		save.deposit(10.00);
+		save.deposit(50.00);
+		save.deposit(10.00);
+		save.deposit(70.00);
+		println(save.transactionFee(5.00));
+		println(save.transactionFee(10.00));
 	}
 } 
