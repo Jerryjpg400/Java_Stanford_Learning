@@ -1,2 +1,2 @@
 # java_Stanford_Learning
-# javaAlgorithms_Priceton_Learning
+# javaAlgorithms_Princeton_Learning
