@@ -9,13 +9,13 @@ public class BlankClass extends ConsoleProgram{
 		ArrayList<Integer> list = readData(a);
 		println(list);
 		println();
-		removeRange(list, 5, 7);
+		removeRange(list, 2, 8);
 		println(list);
 	}
 	
 	private void removeRange(ArrayList<Integer> list, int a, int b) {
 		for (int i = list.size()-1; i >= 0; i--) {
-			if (list.get(i) >= 5 && list.get(i) <= 7) {
+			if (list.get(i) >= a && list.get(i) <= b) {
 				list.remove(i);
 			}
 		}
