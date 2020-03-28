@@ -18,7 +18,7 @@ In general, any machine learning problem can be assigned to one of two broad cla
 
 **Supervised learning** and **Unsupervised learning.**
 
-### Supervised Learning
+## Supervised Learning
 
 In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
 
@@ -36,7 +36,7 @@ We could turn this example into a classification problem by instead making our o
 
 * **Classification** - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
 
-### Unsupervised Learning
+## Unsupervised Learning
 
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.
 
@@ -60,7 +60,7 @@ To describe the supervised learning problem slightly more formally, our goal is,
 
 When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem
 
-### Cost Function
+## Cost Function
 [Useful LaTeX/Mathematics_1](https://en.wikibooks.org/wiki/LaTeX/Mathematics)<br>
 [Useful LaTeX/Mathematics_2](https://www.jianshu.com/p/e74eb43960a1)<br>
 [Online tool for LaTeX/Mathematics](http://latex.codecogs.com/eqneditor/editor.php)<br>
