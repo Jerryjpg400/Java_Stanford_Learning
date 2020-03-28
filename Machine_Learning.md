@@ -1,6 +1,6 @@
 # Machine Learning
 
-### what is the machine Learning?
+## what is the machine Learning?
 
 Two definitions of Machine Learning are offered. Arthur Samuel described it as: "the field of study that gives computers the ability to learn without being explicitly programmed." This is an older, informal definition.
 
