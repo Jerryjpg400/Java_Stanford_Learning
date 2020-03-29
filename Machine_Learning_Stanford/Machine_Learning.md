@@ -306,7 +306,7 @@ In scalar multiplication, we simply multiply every element by the scalar value:
 
 In scalar division, we simply divide every element by the scalar value:
 
-$\begin{bmatrix}
+> $\begin{bmatrix}
  a & b \\
  c & d \\
  \end{bmatrix} /
@@ -346,7 +346,7 @@ add_As = A + s
 
 We map the column of the vector onto each row of the matrix, multiplying each element and summing the result.
 
-$\begin{bmatrix}
+> $\begin{bmatrix}
  a & b \\
  c & d \\
  e & f \end{bmatrix}*
@@ -381,7 +381,7 @@ Av = A * v
 
 We multiply two matrices by breaking it into several vector multiplications and concatenating the result.
 
-$\begin{bmatrix}
+>$\begin{bmatrix}
  a & b \\
  c & d \\
  e & f
@@ -413,4 +413,79 @@ $\begin{bmatrix}
  mult_AB = A*B
 
  % Make sure you understand why we got that result
+```
+## Matrix Multiplication Properties
+
++ Matrices are not commutative: A∗B≠B∗A
+
++ Matrices are associative: (A∗B)∗C=A∗(B∗C)
+
+The **identity matrix**, when multiplied by any matrix of the same dimensions, results in the original matrix. It's just like multiplying numbers by 1. The identity matrix simply has 1's on the diagonal (upper left to lower right diagonal) and 0's elsewhere.
+
+> $\begin{bmatrix}
+ 1 & 0 & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1 \\
+ \end{bmatrix}$
+
+When multiplying the identity matrix after some matrix (A∗I), the square identity matrix's dimension should match the other matrix's **columns**. When multiplying the identity matrix before some other matrix (I∗A), the square identity matrix's dimension should match the other matrix's **rows**.
+
+```
+% Initialize random matrices A and B
+A = [1,2;4,5]
+B = [1,1;0,2]
+
+% Initialize a 2 by 2 identity matrix
+I = eye(2)
+
+% The above notation is the same as I = [1,0;0,1]
+
+% What happens when we multiply I*A ?
+IA = I*A
+
+% How about A*I ?
+AI = A*I
+
+% Compute A*B
+AB = A*B
+
+% Is it equal to B*A?
+BA = B*A
+
+% Note that IA = AI but AB != BA
+```
+## Inverse and Transpose
+The **inverse** of a matrix A is denoted $A^{-1}$. Multiplying by the inverse results in the identity matrix.
+
+A non square matrix does not have an inverse matrix. We can compute inverses of matrices in octave with the pinv(A) function and in Matlab with the inv(A) function. Matrices that don't have an inverse are singular or degenerate.
+
+The **transposition** of a matrix is like rotating the matrix 90° in clockwise direction and then reversing it. We can compute transposition of matrices in matlab with the transpose(A) function or A':
+
+> $A = \begin{bmatrix}
+ a & b \\
+ c & d \\
+ e & f \end{bmatrix}$
+
+ > $A^T = \begin{bmatrix}
+  a & c & e \\
+  b & d & f \\
+  \end{bmatrix}$
+
+In other words:
+
+> $A_{ij} = A_{ji}^{T}$
+
+```
+% Initialize matrix A
+A = [1,2,0;0,5,6;7,0,9]
+
+% Transpose A
+A_trans = A'
+
+% Take the inverse of A
+A_inv = inv(A)
+
+% What is A^(-1)*A?
+A_invA = inv(A)*A
+
 ```
