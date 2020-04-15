@@ -15,4 +15,23 @@ Encapsulation
 Modularity
 Polymorphism
 Dynamic Dispatch
-Disposing
+propagated upward
+ternary expressions
+so long as
+legitimate
+narrower
+literally
+demonstration
+manifestation
+Dispatch
+generics
+prior to that
+prior
+subsequently
+affiliated
+anonymous
+pseudorandom
+rotate
+Sentinels
+predecessor
+successor
