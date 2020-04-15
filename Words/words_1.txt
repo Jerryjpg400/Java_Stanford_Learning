@@ -31,3 +31,7 @@ subsequently
 affiliated
 anonymous
 pseudorandom
+rotate
+Sentinels
+predecessor
+successor
