@@ -35,3 +35,8 @@ rotate
 Sentinels
 predecessor
 successor
+disposing
+Concatenate
+universality
+bucket
+pipeline
