@@ -40,3 +40,19 @@ Concatenate
 universality
 bucket
 pipeline
+resurgence
+Carriage return
+rules of thumb
+serialization format
+emulate
+decoupling from
+decoupling
+Normal Equation Noninvertibility
+singular
+degenerate
+invertible
+non-invertible
+algebra
+tilde
+transcript
+exponentiation
